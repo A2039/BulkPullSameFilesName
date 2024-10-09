@@ -1,0 +1,86 @@
+Unique File Name Comparison Tool
+This Python script compares files in two folders and generates an Excel report with the unique file names from both folders. The files are compared based on their file names, and the results are saved in an Excel file. Additionally, the script uses a progress bar to visually indicate the progress of the comparison process.
+
+Features
+Folder Path Validation: Ensures the provided folder paths exist and are valid.
+Excel File Creation: The result is saved as an Excel file with the list of unique files from both folders.
+Progress Bar: Displays a real-time progress bar using the tqdm library to indicate file comparison status.
+Union of Files: The script retrieves all unique file names from both folders.
+Setup Instructions
+Prerequisites
+Python 3.7+ installed. You can download the latest version from here.
+Required libraries:
+pandas
+tqdm
+openpyxl
+Installing Required Libraries
+
+To install the required libraries, run the following commands in your terminal:
+pip install pandas tqdm openpyxl
+Script Execution
+
+Clone the Repository (or download the script):
+git clone https://github.com/yourusername/repo-name.git
+cd repo-name
+
+Run the Script: Execute the script using Python:
+python script_name.py
+How to Use
+
+Folder Paths:
+When prompted, enter the full path for Folder 1 and Folder 2 where your files are located.
+Make sure that the folder paths are valid.
+
+Excel File:
+Enter the folder path where you want the Excel file to be saved.
+Provide a name for the Excel file (without extension).
+
+Comparison Process:
+The script will process and compare the files from both folders.
+It will display a progress bar as the files are processed.
+
+Result:
+The script will generate an Excel file listing the unique file names from both folders.
+The Excel file will be saved in the specified output folder.
+Example Usage
+Here’s a step-by-step example of how to use the tool:
+
+Enter Folder Paths:
+mathematica
+Copy code
+Enter the path for Folder 1: C:\Users\Documents\Folder1
+Enter the path for Folder 2: C:\Users\Documents\Folder2
+Specify Output Folder:
+
+mathematica
+Copy code
+Enter the path for Folder to save Excel file: C:\Users\Documents\Results
+
+Specify Excel File Name:
+Enter the Excel filename (without extension): UniqueFiles
+
+Progress Display:
+Comparing files: |██████████████████████████████████████████████| 100%
+Completion Message:
+
+✅ Process complete. 🐍 Results saved at: C:\Users\Documents\Results\UniqueFiles.xlsx
+Error Handling
+The script includes basic error handling. If any issue occurs, such as an invalid folder path, an appropriate error message will be displayed:
+
+Invalid Folder Path:
+❌ Invalid folder path: C:\Invalid\Path. Please enter a valid path.
+Excel File Name Validation: If the Excel file name is left empty, it will prompt again until a valid name is provided:
+
+❌ Excel file name cannot be empty.
+Other Errors: Any other unexpected errors will display a general error message:
+
+❌ An error occurred: <error_message>
+Requirements
+Python 3.7 or higher
+Libraries:
+pandas
+tqdm
+openpyxl
+Contributing
+Feel free to contribute by forking this repository, creating a new branch, and submitting a pull request with your changes.
+
